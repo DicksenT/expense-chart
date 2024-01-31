@@ -16,3 +16,135 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+.container{
+    width: 350px;
+    background-color: white;
+    background-color: transparent;
+}
+.balance{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: hsl(10, 79%, 65%);
+    padding: 12px 20px;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.balance-num{
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.stats{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+.bold{
+    font-size: 24px;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+.charts{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+.chart{
+    width: 44px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.bar-container{
+    height: 180px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.day-num{
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    width: 100%;
+    font-size: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: 0.4s;
+    opacity: 1;
+}
+.bar{
+    background-color: hsl(10, 79%, 65%);
+    height: 140px;
+    border-radius: 4px;
+    width: 75%;
+    bottom: 0;
+    margin: 0 auto;
+}
+.day{
+    text-align: center;
+}
+.summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0;
+}
+.total{
+    width: 50%;
+}
+.total .bold{
+    font-size: 32px;
+}
+.from-last-month{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.from-last-month .bold{
+    font-size: 14px;
+    text-align: end;
+}
+
+@media (min-width:1024px) {
+    .container{
+        width: 460px;
+    }
+    .chart{
+        width: 52px;
+    }
+    .day-num{
+        font-size: 14px;
+    }
+    .balance{
+        padding: 16px 24px;
+    }
+    .balance-num{
+        font-size: 28px;
+    }
+    .logo{
+        width: 72px;
+        height: 72px;
+    }
+    .stats{
+        padding: 28px;
+    }
+}
+
