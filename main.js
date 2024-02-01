@@ -14,9 +14,6 @@ async function fetchData() {
         bars[i].style.backgroundColor = "hsl(186, 34%, 60%)";
       }
       dayNum[i].innerText = `$${data[i].amount}`;
-      bars[i].addEventListener('mouseenter', function(){
-        dayNum[i].style.opacity = '1'
-      })
     }
   } catch (error) {
     console.error(error);
